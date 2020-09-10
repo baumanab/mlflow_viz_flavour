@@ -19,6 +19,7 @@ setup(
         'mlflow==1.10.0',
         'PyYAML==5.3.1',
         'altair==4.1.0',
+        'altair_viewer',
     ],
     extras_require={
     },
