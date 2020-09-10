@@ -29,7 +29,7 @@ setup(
     entry_points="""
     [console_scripts]
     """,
-    python_requires=">=3.8",
+    python_requires=">=3.7",
     classifiers=[
         "Programming Language :: Python :: 3.8",
         "License :: OSI Approved :: MIT License",
