@@ -150,7 +150,7 @@ def load_model(model_uri):
     with open(local_conf_path, 'r') as file:
         conf = json.load(file)
 
-    # Andy's
+    # initial vegalite style
     return vg.VegaLite(spec)
 
 
