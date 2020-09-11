@@ -136,7 +136,7 @@ def save_model(
     mlflow_model.save(os.path.join(path, MLMODEL_FILE_NAME))
 
 
-def load_model(model_uri):
+def load_model(model_uri, vega=False):
     """
     """
     import altair.vegalite.v4 as vg
@@ -150,8 +150,11 @@ def load_model(model_uri):
     with open(local_conf_path, 'r') as file:
         conf = json.load(file)
 
-    # initial vegalite style
-    return vg.VegaLite(spec)
+    if not vega:
+        # initial vegalite style
+        return vg.VegaLite(spec)
+    if vega:
+        return spec
 
 
 """
